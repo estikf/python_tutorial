@@ -1,0 +1,16 @@
+Official Python Docs:
+
+	https://docs.python.org/3.7/
+
+Web Resources:
+
+	https://www.w3schools.com/python/default.asp
+	https://www.practicepython.org/
+	https://realpython.com/
+
+YouTube Tutorials
+	
+	Arin Yazýlým:	https://www.youtube.com/c/ArinYazilim/playlists
+	Corey Schafer:	https://www.youtube.com/c/Coreyms/playlists
+	Tech With Tim:	https://www.youtube.com/c/TechWithTim/playlists
+	Sentdex(Advanced):	https://www.youtube.com/c/sentdex/playlists
