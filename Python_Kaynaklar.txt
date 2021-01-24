@@ -14,3 +14,6 @@ YouTube Tutorials
 	Corey Schafer:	https://www.youtube.com/c/Coreyms/playlists
 	Tech With Tim:	https://www.youtube.com/c/TechWithTim/playlists
 	Sentdex(Advanced):	https://www.youtube.com/c/sentdex/playlists
+
+Regex Videosu:
+	https://www.youtube.com/watch?v=aHEMwC1SDXw

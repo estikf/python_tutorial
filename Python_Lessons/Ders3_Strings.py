@@ -1,0 +1,12 @@
+name = "furkan estik"
+# print(len(name))
+# print(name[4])
+# print(name[0:5])
+# print(name.title())
+# print(name.upper())
+# print(name.lower())
+# print(name.count('x'))
+# print(name.find('n'))
+# print(name.replace('estik','festik'))
+# print(dir(name))
+# print(help(str))
