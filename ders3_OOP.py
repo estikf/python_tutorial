@@ -76,3 +76,30 @@ bursali_1.zam()
 print(bursali_1.salary)
 bursali_1.zam()
 print(bursali_1.salary)"""
+
+# Class Property and Encapsulation
+
+class Fighter:
+    def __init__(self, name, level, hp):
+        self.__name = name
+        self.__level = level
+        self.__hp = hp
+    
+    @property
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, character_name):
+        if type(character_name) != str:
+            print("String yazınız.")
+        else:
+            self.__name = character_name
+
+fighter_1 = Fighter("Legolas",10,100)
+#print(fighter_1.__name)
+
+print(fighter_1.get_name)
+
+fighter_1.set_name("Furkan")
+
+print(fighter_1.get_name)
