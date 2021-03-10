@@ -39,16 +39,35 @@ def base10_to_202(amt_in_base10):
     
     return octal_prefix
 
-def get_nth_base202_amount(text,n):
+def get_nth_base202_amount_list(text):
     i = 0
     coins = []
     while "0c" in text[i:].lower():
         coin_starting_index = text[i:].lower().index("0c")                                  # 66
         coin = (text[coin_starting_index + i : coin_starting_index + i + 10])               # text[66:74]
         i = i + coin_starting_index + 8                                                     # i = 0 +  74
-        if is_202(coin):
-            coins.append(coin)
-    return coins[n]
+        coins.append(coin)
+    return coins
+
+def get_nth_base202_amount(text,n):
+    coins_list = get_nth_base202_amount_list(text)
+    if is_202(coins_list[n]):
+        return coins_list[n]
+    else:
+        return r"''"
+
+def get_total_dollar_amount(text):
+    coins_list = get_nth_base202_amount_list(text)
+    total_dollar_amount = 0
+    for i in coins_list:
+        if is_202(i):
+            dollar_amount = base202_to_10(i)
+            total_dollar_amount += int(dollar_amount)
+        return total_dollar_amount
 
 print(get_nth_base202_amount("BANKING TRANSACTIONS... .PLANET ORION......FEBRUARY \
-15, 3019.......0cCCMMPP22........FEBRUARY 16, 3019..........0cOCOCOCOC      0C24242412",0))
+15, 3019.......0cCCMMPP22........FEBRUARY 16, 3019..........0cOCOCOCOC      0C24242412 0cOCOCOCOC 0cOCOCOCOC 0cOC2COCOC 0cOCOCOCOC",2))
+
+print(get_total_dollar_amount("BANKING TRANSACTIONS....PLANET ORION......FEBRUARY\
+15, 3019.......0cCCMMPP22........FEBRUARY 16, 3019..........0cOCOCOCOC........\
+FEBRUARY 17, 3019..........0C24242412"))
