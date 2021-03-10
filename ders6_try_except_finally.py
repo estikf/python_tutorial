@@ -9,4 +9,4 @@ except ZeroDivisionError:
 except:
     print("Bir hata oluştu.")
 finally:
-    print("Kod çalıştı.")
+    print("Her türlü çalışırım. Command executed.")
