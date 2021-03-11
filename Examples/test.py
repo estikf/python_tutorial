@@ -1,0 +1,5 @@
+TEXT = "BANKING TRANSACTIONS....PLANET ORION......FEBRUARY \
+15, 3019.......0cCCMMPP22........FEBRUARY 16, 3019..........0cOCOCOCOC.........\
+FEBRUARY 17, 3019..........0c24242412"
+
+print(TEXT[(80+31+8):].index("0c")) 
